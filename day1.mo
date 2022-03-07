@@ -1,4 +1,5 @@
-actor {
+    import Debug "mo:base/Debug";
+    actor {
     public func greet(name : Text) : async Text {
         return "Hello, " # name # "!";
     };
@@ -40,7 +41,6 @@ actor {
         } else {
             return false;
         };
-            
     };
 
     // Challenge 6 
@@ -51,6 +51,18 @@ actor {
             return false;
         };
     };
+
+    // Challenge 7 
+    let array : [Nat] = [1, 2, 3, 4, 5];
+    let sum = 0;
+
+    public func sum_of_array() : async () {
+        for (value in array.vals()){
+            let sum =+ value;
+        };
+        return sum;
+    };
+
 
 
 };
