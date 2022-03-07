@@ -1,4 +1,5 @@
     import Debug "mo:base/Debug";
+    import Nat "mo:base/Nat";
     actor {
     public func greet(name : Text) : async Text {
         return "Hello, " # name # "!";
@@ -63,6 +64,13 @@
         return sum;
     };
 
+    // Challenge 8
 
+    // Challenge 9
+    public func nat_to_text(n : Nat) : async Text {
+        return(Nat.toText(n));
+    };
+
+    // Challenge 10
 
 };
