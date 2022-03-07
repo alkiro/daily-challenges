@@ -1,9 +1,9 @@
-    import Debug "mo:base/Debug";
-    import Nat "mo:base/Nat";
-    actor {
-    public func greet(name : Text) : async Text {
-        return "Hello, " # name # "!";
-    };
+// Day 1 Challenges
+
+import Debug "mo:base/Debug";
+import Nat "mo:base/Nat";
+
+actor {
 
     // Challenge 1
     public func add(n : Nat, m : Nat) : async Nat {
