@@ -1,14 +1,14 @@
 // Day 2 Challenges
     
-import Debug "mo:base/Debug";
-import Nat "mo:base/Nat";
+import Nat8 "mo:base/Nat8";
 
 actor {
 
+
     // Challenge 1
-    public func here we go
-
-
-
+    public func nat_to_nat8(n : Nat) : async Nat {
+      let fromNat : n -> Nat8;
+      return(n);
+    }:
 
 };
